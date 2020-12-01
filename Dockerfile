@@ -2,7 +2,9 @@ ARG PYTORCH="1.7.0-cuda11.0-cudnn8-runtime"
 
 FROM pytorch/pytorch:${PYTORCH}
 
-RUN apt-get update && apt-get install -y git
+RUN apt-get update && apt-get install -y git vim
+
+
 
 RUN git clone https://github.com/dacon-ai/torso-ct.git /torso-ct
 
