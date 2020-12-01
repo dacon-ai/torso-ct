@@ -4,8 +4,6 @@ FROM pytorch/pytorch:${PYTORCH}
 
 RUN apt-get update && apt-get install -y git vim
 
-
-
 RUN git clone https://github.com/dacon-ai/torso-ct.git /torso-ct
 
 WORKDIR /torso-ct
